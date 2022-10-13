@@ -51,6 +51,24 @@ const config = {
         },
       }),
     ],
+    // Redocusaurus config
+    [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          {
+            spec: 'https://redocly.github.io/redoc/openapi.yaml',
+            route: '/api/',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+        },
+      },
+    ],
   ],
 
   themes: ['docusaurus-theme-search-typesense'],
